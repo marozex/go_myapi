@@ -17,3 +17,13 @@ touch main.go
 ```
  go run main.go
 ```
+
+疎通確認
+
+```
+curl http://localhost:1234/hello
+
+curl http://localhost:1234/hello -X GET -w '%{http_code}\n'
+
+curl http://localhost:1234/hello -X POST -w '%{http_code}\n'
+```

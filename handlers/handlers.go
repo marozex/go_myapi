@@ -6,5 +6,10 @@ import (
 )
 
 func HelloHandler(w http.ResponseWriter, req *http.Request) {
-	io.WriteString(w, "hello this is go_myapi")
+
+	if req.Method == http.MethodGet {
+		io.WriteString(w, "hello this is go_myapi")
+	} else {
+		http.Error(w, "invalid method", http.StatusMethodNotAllowed)
+	}
 }
