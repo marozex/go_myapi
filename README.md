@@ -8,6 +8,7 @@ go 中級者への道
 cd go_myapi
 go mod init github.com/marozex/go_myapi
 touch main.go
+go get -u github.com/gorilla/mux
 ```
 
 ## 操作手順
