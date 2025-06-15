@@ -9,3 +9,11 @@ cd go_myapi
 go mod init github.com/marozex/go_myapi
 touch main.go
 ```
+
+## 操作手順
+
+サーバー起動
+
+```
+ go run main.go
+```
